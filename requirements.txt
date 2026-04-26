@@ -1,0 +1,11 @@
+scikit-image
+numpy
+matplotlib
+pandas
+pyspark
+scipy
+seaborn
+pillow 
+tqdm
+tabulate
+loguru

@@ -1,0 +1,4 @@
+data/raw
+__pycache__
+models/
+data/.zip/kvasir-dataset-v2.zip
