@@ -4,3 +4,4 @@ models/
 .zip/
 data/.zip/
 .env
+raw/
