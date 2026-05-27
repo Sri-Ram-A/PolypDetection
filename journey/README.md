@@ -69,3 +69,33 @@ java -version
 ```
 - https://medium.com/@nomannayeem/pyspark-made-simple-from-basics-to-big-data-mastery-cb1d702968be  
 - https://www.datacamp.com/tutorial/pyspark-tutorial-getting-started-with-pyspark  
+(Honestly learn better from deepseek and gpt)
+
+```bash
+Input Endoscopy Image
+        │
+        ▼
+┌──────────────────────────────────────────┐
+│  Stage 1: Coarse Classification          │
+│  (With Uncertainty Estimation)           │
+│  Output: Normal / Abnormal / Procedural  │
+│  + Uncertainty Score                     │
+└──────────────────────────────────────────┘
+        │
+        ├─── If NORMAL ──► Stage 2a: Anatomy Classification
+        │                   (cecum/pylorus/z-line)
+        │
+        ├─── If ABNORMAL ──► Stage 2b: Pathology Classification
+        │                      (polyp/esophagitis/colitis)
+        │                      └─── If POLYP ──► SEGMENTATION
+        │
+        └─── If PROCEDURAL ──► Stage 2c: Intervention Classification
+                                (dyed-lifted/resection-margins)
+```
+mkdir -p ~/.kaggle && echo KGAT_e2e... > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
+kaggle competitions list
+
+- Configured wandb rvce account teams
+# Ray
+- https://medium.com/data-science/fast-hyperparameter-tuning-at-scale-d428223b081c
+conda install conda-forge::ray-tune
