@@ -1,0 +1,6 @@
+modelName,macsG,paramsM,totalParameters,trainableParameters,frozenParameters,approxModelSizeMb,inputSizeMb,forwardBackwardPassSizeMb,paramsSizeMb,estimatedTotalSizeMb,accuracy,balancedAccuracy,macroF1,mcc,multiclassAuroc,misclassified
+mobilenetv3_small_100,0.056,1.506,1526056,1526056,0,5.82,0.6,11.33,6.06,17.99,0.9101,0.9101,0.9099,0.8973,0.9943,108
+efficientnet_b0,0.385,3.976,4017796,4017796,0,15.33,0.6,53.98,15.9,70.48,0.9209,0.921,0.921,0.9098,0.9952,95
+convnext_tiny,4.455,27.803,27826280,27826280,0,106.15,0.6,131.27,111.28,243.15,0.9317,0.9318,0.9317,0.922,0.9953,82
+Densenet121,2.833,6.878,6962056,6962056,0,26.56,0.6,55.19,27.51,83.31,0.9367,0.9368,0.9366,0.9282,0.9924,76
+ghostnet_100,0.154,3.9,3911756,3911756,0,14.92,0.6,56.28,15.64,72.53,0.9301,0.9302,0.9301,0.9203,0.9961,84
