@@ -1,0 +1,66 @@
+# .streamlit/config.toml
+# Place this file at:  your_project/.streamlit/config.toml
+#
+# Font strategy:
+#   body      → Inter        (highly legible, professional UI standard)
+#   headings  → Inter        (bold weights used for clean, modern clinical hierarchy)
+#   code      → JetBrains Mono (highly distinctive characters for data/code)
+#
+# Theme strategy:
+#   Dark Mode  → Clinical Dark Dashboard (Deep navy slate, electric medical blue accent)
+#   Light Mode → Electronic Health Record (EHR) Style (Clean sterile whites, calm surgical teal accent)
+# ----------------------------------------------------------------------------
+
+# ── Font loading (Google Fonts, applies to both themes) ─────────────────────
+[theme]
+font          = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap, sans-serif"
+headingFont   = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap, sans-serif"
+codeFont      = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap, monospace"
+baseFontSize  = 16
+baseFontWeight = 400
+baseRadius    = "medium"
+showSidebarBorder = true
+
+# ── DARK THEME (Clinical/Lab Dashboard) ──────────────────────────────────────
+[theme.dark]
+primaryColor             = "#00d2ff"          # Electric medical cyan / alert blue
+backgroundColor          = "#0b0f19"          # Deep medical slate / dark room blue
+secondaryBackgroundColor = "#161f30"          # Card / widget background
+textColor                = "#f1f5f9"          # Crisp, readable white (slate-50)
+linkColor                = "#38bdf8"          # Bright sky blue for links
+codeTextColor            = "#34d399"          # Soft green for normal data values
+codeBackgroundColor      = "#111827"          # Dark code background
+borderColor              = "#24324d"          # Muted slate border
+showWidgetBorder         = true
+baseRadius              = "medium"
+buttonRadius            = "small"
+
+[theme.dark.sidebar]
+backgroundColor          = "#0d1527"          # Slightly distinct dark sidebar
+secondaryBackgroundColor = "#1e293b"          # Sidebar widget background
+primaryColor             = "#00d2ff"
+textColor                = "#cbd5e1"          # Muted gray text for secondary navigation
+borderColor              = "#24324d"
+showWidgetBorder         = true
+
+# ── LIGHT THEME (EHR / Hospital Portal) ──────────────────────────────────────
+[theme.light]
+primaryColor             = "#0891b2"          # Surgical Teal (Calm, highly visible, professional)
+backgroundColor          = "#f8fafc"          # Clean, clinical white-gray (slate-50)
+secondaryBackgroundColor = "#f1f5f9"          # Solid widget and card surfaces (slate-100)
+textColor                = "#0f172a"          # High-contrast deep navy text (slate-900)
+linkColor                = "#0284c7"          # Professional medical blue links
+codeTextColor            = "#059669"          # Clinical green for positive/safe metrics
+codeBackgroundColor      = "#e2e8f0"          # Light gray background for data pills
+borderColor              = "#cbd5e1"          # Crisp gray border for definition (slate-300)
+showWidgetBorder         = true
+baseRadius              = "medium"
+buttonRadius            = "small"
+
+[theme.light.sidebar]
+backgroundColor          = "#f1f5f9"          # Light slate sidebar
+secondaryBackgroundColor = "#e2e8f0"
+primaryColor             = "#0891b2"
+textColor                = "#334155"          # Muted slate text
+borderColor              = "#cbd5e1"
+showWidgetBorder         = true

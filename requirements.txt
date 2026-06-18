@@ -9,3 +9,15 @@ pillow
 tqdm
 tabulate
 loguru
+
+streamlit
+timm
+plotly
+psutil
+codecarbon
+segmentation-models-pytorch
+# Optional: only needed if your segmentation checkpoints were built with
+# segmentation_models_pytorch - torch.load() will require it to be
+# importable when unpickling the "..._complete.pth" files.
+# segmentation-models-pytorch>=0.3
+
