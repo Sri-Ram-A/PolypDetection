@@ -8,8 +8,8 @@ import pycuda.autoinit
 from scipy.ndimage import distance_transform_edt
 
 ENGINE_PATH = "hardnet_mseg_fp16.engine"
-IMAGE_DIR   = "data/raw/kvasir-seg/Kvasir-SEG/images"
-MASK_DIR    = "data/raw/kvasir-seg/Kvasir-SEG/masks"
+IMAGE_DIR   = "/workspace/BDT/data/raw/kvasir-seg/Kvasir-SEG/images"
+MASK_DIR    = "/workspace/BDT/data/raw/kvasir-seg/Kvasir-SEG/masks"
 OUT_DIR     = "seg_results"
 H, W        = 352, 352
 IOU_THRESH  = 0.5          # threshold for mAP TP/FP decision

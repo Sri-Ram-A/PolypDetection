@@ -13,7 +13,7 @@ import seaborn as sns
 from scipy.special import softmax
 
 ENGINE_PATH   = "best_squeezenet_fp16.engine"
-DATA_DIR      = "data/raw/Kvasir-classify/kvasir-dataset"
+DATA_DIR      = "/workspace/BDT/data/raw/Kvasir-classify/kvasir-dataset"
 SELECTED_CLASSES = ["esophagitis", "polyps", "ulcerative-colitis"]
 H, W          = 224, 224
 
