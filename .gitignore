@@ -5,3 +5,5 @@ models/
 data/.zip/
 .env
 raw/
+app/uploads/
+app/results/
