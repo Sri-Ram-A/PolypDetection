@@ -6,6 +6,7 @@ import plotly.express as px
 
 from backend.video_processor import VideoProcessor
 
+
 st.set_page_config(
     page_title="Polyp Detection and Segmentation System",
     page_icon="🩺",
@@ -35,8 +36,8 @@ with st.sidebar:
         AI-Based Polyp Detection System
 
         Models:
-        • DenseNet-121
-        • PraNet
+        • SqueezeNet
+        • HardNet-MSEG
 
         Dataset:
         • Hyper-Kvasir
@@ -104,7 +105,11 @@ if uploaded_file:
 
     if st.button("Run Analysis"):
         with st.spinner("Processing Video..."):
-            processor = VideoProcessor()
+            @st.cache_resource
+            def get_processor():
+                return VideoProcessor()
+
+            processor = get_processor()
 
             video_name = Path(
                 uploaded_file.name

@@ -4,15 +4,15 @@ import cv2
 import numpy as np
 from tqdm import tqdm
 
-from backend.classifier import DenseNetClassifier
-from backend.segmenter import PraNetSegmenter
+from backend.classifier2 import SqueezeNetClassifier
+from backend.segmenter2 import HardNetMSEGSegmenter
 
 
 class VideoProcessor:
     def __init__(self):
 
-        self.classifier = DenseNetClassifier()
-        self.segmenter = PraNetSegmenter()
+        self.classifier = SqueezeNetClassifier()
+        self.segmenter = HardNetMSEGSegmenter()
 
     def process_video(self, input_video_path, output_video_path):
 
@@ -32,7 +32,7 @@ class VideoProcessor:
         output_width = width * 2
         output_height = height
 
-        fourcc = cv2.VideoWriter_fourcc(*"avc1")
+        fourcc = cv2.VideoWriter_fourcc(*"mp4v")   # instead of "avc1"
 
         writer = cv2.VideoWriter(
             str(output_video_path), fourcc, fps, (output_width, output_height)
